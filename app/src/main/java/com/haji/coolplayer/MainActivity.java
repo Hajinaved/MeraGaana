@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse) {
 
-                        Toast.makeText(MainActivity.this, "Runtime permission given", Toast.LENGTH_SHORT).show();
+                       // Toast.makeText(MainActivity.this, "Runtime permission given", Toast.LENGTH_SHORT).show();
                         ArrayList<File> songs = fetchSongs(Environment.getExternalStorageDirectory());
                         String [] items = new String[songs.size()];
                         for (int i = 0 ; i< songs.size();i++){
